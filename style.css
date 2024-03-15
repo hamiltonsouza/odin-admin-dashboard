@@ -12,7 +12,14 @@ body {
 
 header {
     display: grid;
+    grid-area: 1 / 2 / 2 / 3;
     grid-template-rows: 1.5fr 1fr;
     grid-template-columns: 1fr 1fr;
-    grid-area: 1 / 2 / 2 / 3;
+}
+
+.sidebar {
+    display: grid;
+    grid-area: 1 / 1 / 3 / 2;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 2fr 1fr;
 }
