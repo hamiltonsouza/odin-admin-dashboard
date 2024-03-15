@@ -3,3 +3,9 @@ img {
     height: auto;
     border-radius: 50%;
 }
+
+body {
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 1fr 4fr;
+}
