@@ -1,0 +1,1 @@
+This is an admin dashboard page project from The Odin Project that I will build from scratch.
