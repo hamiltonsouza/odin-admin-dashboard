@@ -9,3 +9,8 @@ body {
     grid-template-rows: 1fr 5fr;
     grid-template-columns: 1fr 4fr;
 }
+
+header {
+    display: grid;
+    grid-area: 1 / 2 / 2 / 3;
+}
