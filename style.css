@@ -12,5 +12,7 @@ body {
 
 header {
     display: grid;
+    grid-template-rows: 1.5fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-area: 1 / 2 / 2 / 3;
 }
