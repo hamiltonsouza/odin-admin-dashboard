@@ -100,3 +100,10 @@ header {
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: 1fr;
 }
+
+.trending-projects {
+    grid-area: 2 / 2 / 3 / 3;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+}
