@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 img {
     width: 60px;
     height: auto;
@@ -13,8 +18,9 @@ body {
 header {
     grid-area: 1 / 2 / 2 / 3;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 0.8fr 1fr;
     grid-template-columns: 1.5fr 1fr;
+    padding-left: 1.75rem;
 }
 
 .search {
@@ -28,7 +34,7 @@ header {
     grid-area: 1 / 2 / 2 / 3;
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: repeat(2, auto) 0.85fr;
+    grid-template-columns: repeat(2, auto) 0.75fr;
 }
 
 .profile {
@@ -57,6 +63,7 @@ header {
     grid-area: 2 / 2 / 3 / 3;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    padding-right: 3rem;
 }
 
 .sidebar {
@@ -125,6 +132,10 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 
+header {
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
+}
+
 .search {
     align-items: center;
 }
@@ -133,18 +144,25 @@ body {
     justify-self: center;
 }
 
-.search-icon button {
+.search-icon button, .notification-icon button {
     background-color: transparent;
     border: none;
 }
 
-.search-icon button:hover {
-    color: #808080;
+button, img, .user-menu-profile-name {
     cursor: pointer;
 }
 
-.search-icon button:active {
+.search-icon button:hover, .notification-icon button:hover {
+    color: #808080;
+}
+
+.search-icon button:active, .notification-icon button:active {
     transform: translateY(2px);
+}
+
+img:active, .user-menu-profile-name:active {
+    transform: translateY(1px);
 }
 
 .search-bar input {
@@ -163,9 +181,9 @@ body {
 
 .user-menu {
     list-style: none;
+    justify-items: center;
     align-items: center;
-    margin-left: 5vw;
-    padding: 0;
+    padding: 0 4vw;
 }
 
 .user-menu img {
@@ -173,14 +191,19 @@ body {
     height: auto;
 }
 
-.user-menu .user-menu-profile-name {
+.user-menu-profile-name {
     font-weight: 700;
     font-size: 1.1rem;
 }
 
+.user-menu-profile-name:hover {
+    color: #444;
+    text-decoration: underline;
+}
+
 .profile {
     align-items: center;
-    padding-bottom: 1rem;
+    padding: 1rem 0;
 }
 
 .profile img {
@@ -204,4 +227,27 @@ body {
     align-self: start;
     font-size: 1.5rem;
     font-weight: 700;
+}
+
+.content-interaction {
+    list-style-type: none;
+    align-items: center;
+    justify-items: center;
+}
+
+.content-interaction-button {
+    border: none;
+    background-color: #663399;
+    color: #FFFFFF;
+    width: 6.75rem;
+    height: 2.75rem;
+    border-radius: 2.1rem;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.content-interaction-button:active {
+    background-color: #7547A3;
+    color: #E6E6E6;
+    transform: translateY(2px);
 }
