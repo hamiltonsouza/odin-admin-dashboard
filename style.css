@@ -19,7 +19,7 @@ header {
     grid-area: 1 / 2 / 2 / 3;
     display: grid;
     grid-template-rows: 0.8fr 1fr;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1fr auto;
     padding-left: 1.75rem;
 }
 
@@ -77,7 +77,7 @@ header {
     grid-area: 2 / 2 / 3 / 3;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: 2.75fr 1fr;
+    grid-template-columns: 2.25fr 1fr;
 }
 
 .your-projects {
@@ -89,6 +89,7 @@ header {
 
 .your-projects .content-title {
     grid-area: 1 / 1 / 2 / 3;
+    font-size: 1.4rem;
 }
 
 .project-card {
@@ -263,11 +264,13 @@ img:active, .user-menu-profile-name:active {
     grid-template-rows: 1fr;
     grid-template-columns: auto 1fr;
     align-items: center;
-    justify-items: center;
+    justify-items: start;
     gap: 0.8rem;
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 700;
+    width: 100%;
     height: 6rem;
+    padding-left: 2rem;
     cursor: default;
 }
 
@@ -309,7 +312,7 @@ img:active, .user-menu-profile-name:active {
     width: 100%;
     height: 3rem;
     font-size: 1.5rem;
-    padding-left: 2.5rem;
+    padding-left: 1.5rem;
     font-weight: 700;
 }
 
@@ -333,10 +336,10 @@ img:active, .user-menu-profile-name:active {
 .main-content {
     box-shadow: inset 0px 5px 5px 0px #00000026;
     background-color: #D1C2E0;
+    padding: 2.25rem 1.5rem;
 }
 
 .your-projects {
-    margin: 2.5rem 1.5rem;
     gap: 1rem;
 }
 
@@ -370,4 +373,48 @@ img:active, .user-menu-profile-name:active {
     gap: 1.5rem;
     align-items: center;
     justify-content: end;
+}
+
+.announcements, .trending-projects {
+    padding: 0 1.5rem;
+    gap: 1rem;
+}
+
+.announcements-board {
+    display: grid;
+    grid-template-rows: repeat(3, fr);
+    grid-template-columns: 1fr;
+    align-items: end;
+    justify-items: center;
+    background-color: #FFFFFF;
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
+
+.announcement-title {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.announcement-content {
+    font-size: 0.8rem;
+    color: #555555;
+}
+
+.announcement:first-child {
+    border-bottom: 1px solid #DDDDDD;
+    padding: 0 0.3rem 1rem 0.3rem;
+    align-self: end;
+}
+
+.announcement {
+    border-bottom: 1px solid #DDDDDD;
+    padding: 1rem 0.3rem 1rem 0.3rem;
+    align-self: center;
+}
+
+.announcement:last-child {
+    border: none;
+    padding: 1rem 0.3rem 0rem 0.3rem;
+    align-self: start;
 }
