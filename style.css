@@ -86,3 +86,10 @@ header {
     grid-template-rows: auto 1fr auto;
     grid-template-columns: 1fr;
 }
+
+.announcements {
+    grid-area: 1 / 2 / 2 / 3;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr;
+}
