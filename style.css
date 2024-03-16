@@ -19,6 +19,7 @@ header {
     grid-template-rows: 0.8fr 1fr;
     grid-template-columns: 1fr auto;
     padding-left: 1.75rem;
+    column-gap: 2rem;
 }
 
 .search {
