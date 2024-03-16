@@ -62,3 +62,10 @@ header {
     grid-template-rows: 0.5fr 2fr 1fr;
     grid-template-columns: 1fr;
 }
+
+.main-content {
+    grid-area: 2 / 2 / 3 / 3;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2.75fr 1fr;
+}
