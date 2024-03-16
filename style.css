@@ -80,3 +80,9 @@ header {
 .content-title {
     grid-area: 1 / 1 / 2 / 3;
 }
+
+.project-card {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+}
