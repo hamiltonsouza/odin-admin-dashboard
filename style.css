@@ -76,3 +76,7 @@ header {
     grid-template-rows: auto 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
 }
+
+.content-title {
+    grid-area: 1 / 1 / 2 / 3;
+}
